@@ -1,0 +1,8 @@
+﻿1.) GitHub Konto erstellen.
+2.) Invitation erhalten von dem Hauptkonto (Hauptkonto Email = marcorustemi99@gmail.com, PW= htlmoedling2019)
+3.) Invitation annehmen 
+4.) TortoiseGit runterladen
+5.) Git runterladen
+6.) GitBash im Ordner öffnen und den Command: git clone https://github.com/Where2Watch/W2W.git eingeben.
+7.) Test machen und dabei nicht vergessen den Develop Branch zu wählen.
+8.) Test gemacht
