@@ -1,7 +1,0 @@
-{
-    "appService.zipIgnorePattern": [
-        ".vscode{,/**}"
-    ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/2a701526-2dc4-4a7d-a4ad-d9e7162c79f2/resourceGroups/W2W/providers/Microsoft.Web/sites/w2w",
-    "appService.deploySubpath": ""
-}
