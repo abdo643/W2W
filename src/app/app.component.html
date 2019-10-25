@@ -2,42 +2,62 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Where 2 Watch</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   </head>
  <body>
-       
-
-
-
-
-
-
-    <section class="section">
-        <div class="container">
-            <h1 class="title">
-                Hello World!
-            </h1>
-                <div class="tile box is-parent">
-                
-                    <div class="tile box is-child">
-                        Netflix
+     <section>
+        <div class="tile box is-parent">
+                    <img src="../assets/pictures/Logo.png"  width="100" height="400"/>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" onclick="myDropDown()">
+                    <div>
+                        <span aria-hidden="false"></span>
+                        <span aria-hidden="false"></span>
+                        <span aria-hidden="false"></span>
                     </div>
-                    <div class="tile box is-child">
-                        Amazon Prime
-                    </div>
-                    <div class="tile box is-child">
-                        Disney
-                    </div>
-                    <div class="tile box is-child">
-                        BlaBla
-                    </div>
+                </a>
+        </div>   
+        <div>
+            <div class="tile box is-parent" id="navback">
+                <div class="tile box is-child" id="navblock">
+                    <img src="../assets/pictures/Netflix.png" width="110" height="30"/>
                 </div>
-                <div class="tile box">
-                    <p>Nochmal</p>
+                <div class="tile box is-child" id="navblock">
+                    <img src="../assets/pictures/AmazonPrime.png" width="80" height="30"/>
                 </div>
+                <div class="tile box is-child" id="navblock">
+                    <img src="../assets/pictures/DisneyPlus.jpg" width="130" height="30">
+                </div>
+            </div>
         </div>
     </section>
+    <table>
+        <thead>
+          <tr>
+            <td>Title:</td>
+            <td>Image:<br/></td>
+            <td>Inhalt:</td>
+            <td>Rating:</td>
+            <td>Type:</td>
+            <td>Released:</td>
+            <td>runtime:</td>
+            <td>unogsdate:</td>
 
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor ="let infos of dataValue.ITEMS">
+            <td>{{infos.title}}</td>
+            <td><img src = "{{infos.image}}"/></td>
+            <td>{{infos.synopsis}}</td>
+            <td>{{infos.rating}}</td>
+            <td>{{infos.type}}</td>
+            <td>{{infos.Released}}</td>
+            <td>{{infos.runtime}}</td>
+            <td>{{infos.unogsdate}}</td>            
+          </tr>
+        </tbody>
+    </table>
+ 
  </body>
