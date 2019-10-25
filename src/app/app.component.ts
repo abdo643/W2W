@@ -1,8 +1,6 @@
 import { Component, OnInit, Pipe,PipeTransform } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { MessageService } from './message.service';
 import { catchError, map, tap } from 'rxjs/operators';
-import { JsonDecoder } from 'ts.data.json';
 import { DomSanitizer } from '@angular/platform-browser'
 
 export interface Items{
