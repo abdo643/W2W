@@ -4,6 +4,25 @@ import { MessageService } from './message.service';
 import { catchError, map, tap } from 'rxjs/operators';
 import { DomSanitizer } from '@angular/platform-browser'
 
+/*export interface Obj{
+  COUNT: string;
+  Ite: Array<It>;
+}
+export interface It{
+  netflixid: string;
+  title: string;
+  image: string;
+  synopsis: string;
+  rating: string;
+  type: string;
+  released: string;
+  runtime: string;
+  largeimage: string;
+  unogsdate: string;
+  imdbid: string;
+  download: string;
+}*/
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,7 +32,7 @@ export class AppComponent
 {
   title = 'Welcome to W2W';
   public data:any;
-  public dataValue:any;
+  public dataValue: any;
 
   private isDataAvailable:boolean=false;
 
