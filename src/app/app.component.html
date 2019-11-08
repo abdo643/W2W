@@ -32,29 +32,22 @@
             </div>
         </div>
     </section>
-    <table>
-        <thead>
-          <tr>
-            <td>Title:</td>
-            <td>Image:<br/></td>
-            <td>Inhalt:</td>
-            <td>Rating:</td>
-            <td>Type:</td>
-            <td>runtime:</td>
-            <td>unogsdate:</td>
+          <ul>
+            <li>Title:</li>
+            <li>Image:<br/></li>
+            <li>Inhalt:</li>
+            <li>Rating:</li>
+            <li>Type:</li>
+            <li>runtime:</li>
+            <li>unogsdate:</li>
+          </ul>
+          <ul *ngFor ="let infos of dataValue.ITEMS">
+            <li>{{infos.title}}</li>
+            <li><img src = "{{infos.image}}"/></li>
+            <li>{{infos.synopsis}}</li>
+            <li>{{infos.rating}}</li>
+            <li>{{infos.type}}</li>
+            <li>{{infos.runtime}}</li>
+            <li>{{infos.unogsdate}}</li>            
           </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor ="let infos of dataValue.ITEMS">
-            <td>{{infos.title}}</td>
-            <td><img src = "{{infos.image}}"/></td>
-            <td>{{infos.synopsis}}</td>
-            <td>{{infos.rating}}</td>
-            <td>{{infos.type}}</td>
-            <td>{{infos.runtime}}</td>
-            <td>{{infos.unogsdate}}</td>            
-          </tr>
-        </tbody>
-    </table>
- 
  </body>

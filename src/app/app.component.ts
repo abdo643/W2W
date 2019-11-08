@@ -4,11 +4,11 @@ import { MessageService } from './message.service';
 import { catchError, map, tap } from 'rxjs/operators';
 import { DomSanitizer } from '@angular/platform-browser'
 
-/*export interface Obj{
+export interface Obj{
   COUNT: string;
-  Ite: Array<It>;
+  Items: Array<Item>;
 }
-export interface It{
+interface Item{
   netflixid: string;
   title: string;
   image: string;
@@ -21,7 +21,7 @@ export interface It{
   unogsdate: string;
   imdbid: string;
   download: string;
-}*/
+}
 
 @Component({
   selector: 'app-root',
@@ -31,8 +31,8 @@ export interface It{
 export class AppComponent 
 {
   title = 'Welcome to W2W';
-  public data:any;
-  public dataValue: any;
+  public data:Obj[]=[];
+  public dataValue: Obj[]=[];
 
   private isDataAvailable:boolean=false;
 
@@ -42,7 +42,7 @@ export class AppComponent
     let headers = new HttpHeaders().set('x-rapidapi-host', 'unogs-unogs-v1.p.rapidapi.com');
     headers = headers.set('x-rapidapi-key', '2e75f12489msh4881df0eea4530ap1d9974jsnb1c9075c37c4');
     headers.append('Content-Type', 'application/json');
-    this.http.get<any>("https://unogs-unogs-v1.p.rapidapi.com/aaapi.cgi?q=get%3Anew7%3ADE&p=1&t=ns&st=adv",{ headers: headers}).
+    this.http.get<Obj[]>("https://unogs-unogs-v1.p.rapidapi.com/aaapi.cgi?q=get%3Anew7%3ADE&p=1&t=ns&st=adv",{ headers: headers}).
     subscribe(data => {this.dataValue = data;console.log(this.dataValue);});      
   }    
 }
