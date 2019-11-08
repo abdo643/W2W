@@ -2,42 +2,36 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Where 2 Watch</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="BULMA_Tile_Prototype.css"/>
+    <script language="javascript" type="BULMA_Tile_Prototype/javascript"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   </head>
  <body>
-       
-
-
-
-
-
-
-    <section class="section">
-        <div class="container">
-            <h1 class="title">
-                Hello World!
-            </h1>
-                <div class="tile box is-parent">
-                
-                    <div class="tile box is-child">
-                        Netflix
+     <section>
+        <div class="tile box is-parent">
+                    <img src="pictures/Logo.png"  width="100" height="400"/>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" onclick="myDropDown()">
+                    <div>
+                        <span aria-hidden="false"></span>
+                        <span aria-hidden="false"></span>
+                        <span aria-hidden="false"></span>
                     </div>
-                    <div class="tile box is-child">
-                        Amazon Prime
-                    </div>
-                    <div class="tile box is-child">
-                        Disney
-                    </div>
-                    <div class="tile box is-child">
-                        BlaBla
-                    </div>
+                </a>
+        </div>   
+        <div>
+            <div class="tile box is-parent" id="navback">
+                <div class="tile box is-child" id="navblock">
+                    <img src="pictures/Netflix.png" width="110" height="30"/>
                 </div>
-                <div class="tile box">
-                    <p>Nochmal</p>
+                <div class="tile box is-child" id="navblock">
+                    <img src="pictures/AmazonPrime.png" width="80" height="30"/>
                 </div>
+                <div class="tile box is-child" id="navblock">
+                    <img src="pictures/DisneyPlus.jpg" width="130" height="30">
+                </div>
+            </div>
         </div>
     </section>
-
  </body>
