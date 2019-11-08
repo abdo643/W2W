@@ -32,13 +32,9 @@ html{
 }
 
 .navbar-burger{
-    top:1%;
-    position: absolute;
-    right: 6%;
-    display: inline-block;
+    top:1%!important;
+    right: 6%!important;
+    display: inline-block!important;
     background-color: #999999;
-}
-.dropdownmarco{
-
-    color:red;
+   
 }
