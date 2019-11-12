@@ -20,6 +20,8 @@
     "@angular/platform-browser-dynamic": "~8.2.4",
     "@angular/router": "~8.2.4",
     "decode-html-entities": "^1.1.10",
+    "html-escape-unescape": "^1.0.3",
+    "js-htmlencode": "^0.3.0",
     "parse-json": "^5.0.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",

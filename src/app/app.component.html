@@ -32,22 +32,34 @@
             </div>
         </div>
     </section>
-          <ul>
-            <li>Title:</li>
-            <li>Image:<br/></li>
-            <li>Inhalt:</li>
-            <li>Rating:</li>
-            <li>Type:</li>
-            <li>runtime:</li>
-            <li>unogsdate:</li>
-          </ul>
-          <ul *ngFor ="let infos of dataValue.ITEMS">
-            <li>{{infos.title}}</li>
-            <li><img src = "{{infos.image}}"/></li>
-            <li>{{infos.synopsis}}</li>
-            <li>{{infos.rating}}</li>
-            <li>{{infos.type}}</li>
-            <li>{{infos.runtime}}</li>
-            <li>{{infos.unogsdate}}</li>            
-          </tr>
+            <!--<div *ngFor ="let infos of dataValue.ITEMS">
+                <div class="tile is-parent">
+                    <div class="tile is -4">
+                    <article class="tile is-child notification is-info">
+                      <p class="title">{{infos.title}}</p>
+                      <p class="subtitle">{{infos.type}}</p>
+                      <figure class="image is-4by3">
+                        <img src="{{infos.image}}">
+                      </figure>
+                      <p>{{infos.unogsdate}}</p>
+                    </article>
+                    </div>
+                </div>
+            </div>-->
+        <p>{{dataValue.COUNT}}</p>
+        <div *ngFor ="let infos of dataValue.ITEMS">
+                <div class="scrolling-wrapper">
+                        <div class="scrolling-wrapper-flexbox">
+                                <div><img src="{{infos.image}}"></div>
+                        </div>
+                </div>
+        </div>
+        <ul  *ngFor ="let infos of dataValue.ITEMS; let i = index">
+            <div>
+            <li>{{i}}.{{infos.synopsis | decodeHtmlEntities}}</li>
+            <li>{{infos.rating | decodeHtmlEntities}}</li>
+            <li>{{infos.runtime | decodeHtmlEntities}}</li>
+            </div>
+          </ul>          
+         
  </body>
