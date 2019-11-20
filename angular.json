@@ -24,9 +24,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.sass"
             ],
-            "scripts": []
+            "scripts": ["../W2WAPP/node_modules/jquery/dist/jquery.min.js"]
           },
           "configurations": {
             "production": {
@@ -89,7 +89,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.sass"
             ],
             "scripts": []
           }
