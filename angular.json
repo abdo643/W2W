@@ -24,9 +24,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.css"
             ],
-            "scripts": ["../W2WAPP/node_modules/jquery/dist/jquery.min.js"]
+            "scripts": [
+              "../W2WAPP/node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -89,7 +91,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -120,6 +122,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "w2w"
+    }
+  },
+  "defaultProject": "w2w",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "css"
+    }
+  }
 }
