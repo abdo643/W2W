@@ -1,22 +1,29 @@
 h1{
     text-align: center;
+    background-color: #0d0d0d;
+    color:red;
+    padding: 0%;
+    margin-bottom: 0px!important;     
+}
+h1.under{
+    text-decoration: underline;
+
 }
 #navback{
-    background-color: 	white;
+    background-color: 	#ff3333;
+    
 }
 #navblock2{
-    background-color: ;
+    background-color: white;
     float: left;
     width: 100%;
 }
 section{
-
     width:100%;
 }
 #navblock, .navbar-burger {
     text-align: center;
-    background-color: #0080ff;
-    color: black;
+    background-color:  #363636;
     font-weight: 900;
 }
 html{
@@ -35,13 +42,16 @@ html{
 }
 
 .navbar-burger{
-    float: right;
     top:1%!important;
     right: 6%!important;
     display: inline-block!important;
     background-color: #999999;
 }
-.anpassen{
-    width: 100px;
-    height: 100px;
+.swiper-container{
+    background-color:  #0d0d0d;
+    padding: 0%;
+}
+.tile.is-parent{
+
+   border-width:0.55rem !important;
 }
