@@ -2,10 +2,10 @@ h1{
     text-align: center;
 }
 #navback{
-    background-color: #686868;
+    background-color: 	#0099ff;
 }
 #navblock2{
-    background-color: #888888;
+    background-color: #0080ff;
     float: left;
     width: 100%;
 }
@@ -15,7 +15,7 @@ section{
 }
 #navblock, .navbar-burger {
     text-align: center;
-    background-color: #888888;
+    background-color: #0080ff;
     color: black;
     font-weight: 900;
 }
