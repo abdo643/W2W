@@ -2,25 +2,24 @@ h1{
     text-align: center;
 }
 #navback{
-    background-color: 	white;
+    background-color: 	#99ffcc;
 }
 #navblock2{
-    background-color: ;
+    background-color: #99ffcc;
     float: left;
     width: 100%;
 }
 section{
-
     width:100%;
 }
 #navblock, .navbar-burger {
     text-align: center;
-    background-color: #0080ff;
+    background-color: #99ffcc;
     color: black;
     font-weight: 900;
 }
 html{
-    background-color: #999999;
+    background-color: black;
 }
 .navbar {
     overflow: hidden;
@@ -35,7 +34,6 @@ html{
 }
 
 .navbar-burger{
-    float: right;
     top:1%!important;
     right: 6%!important;
     display: inline-block!important;
