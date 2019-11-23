@@ -35,13 +35,18 @@ html{
 }
 
 .navbar-burger{
-    float: right;
     top:1%!important;
     right: 6%!important;
     display: inline-block!important;
     background-color: #999999;
 }
-.anpassen{
-    width: 100px;
-    height: 100px;
+.center{
+    
+    width: 200px!important;
+    height:100px!important;
+    margin-left: auto;
+    margin-right: auto;
+   
+
 }
+

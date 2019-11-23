@@ -62,6 +62,7 @@ body{
     height:100px!important;
     margin-left: auto;
     margin-right: auto;
-   
-
+}
+a:link{
+    color: red;
 }
