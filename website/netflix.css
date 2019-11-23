@@ -26,8 +26,8 @@ section{
     background-color:  #363636;
     font-weight: 900;
 }
-html{
-    background-color: #999999;
+body{
+    background-color: #0d0d0d!important;
 }
 .navbar {
     overflow: hidden;
@@ -54,4 +54,14 @@ html{
 .tile.is-parent{
 
    border-width:0.55rem !important;
+}
+.center{
+    border-color: #0d0d0d;
+    background-color:#0d0d0d;
+    width: 200px!important;
+    height:100px!important;
+    margin-left: auto;
+    margin-right: auto;
+   
+
 }
