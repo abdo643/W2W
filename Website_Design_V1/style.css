@@ -1,3 +1,9 @@
+img{
+    float: left;
+}
+.txtmid{
+    line-height: 200px
+}
 .swiper-container {
     width: 100%;
     padding-top: 50px;
