@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,9 +33,9 @@
             <div class="navbar-container">
                 <ul>
                     <li class="nav-link active-link">
-                    <div class="navbar-start">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </div>
+                        <div class="navbar-start">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </div>
                         <div class="underline"></div>
                     </li>
 
@@ -65,100 +66,74 @@
             </div>
         </div>
         <script>
-            $('.nav-link').on('click', function() {
-            $('.active-link').removeClass('active-link');
-            $(this).addClass('active-link');
+            $('.nav-link').on('click', function () {
+                $('.active-link').removeClass('active-link');
+                $(this).addClass('active-link');
             });
         </script>
-        <!--<div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item">
-                    Home
-                </a>
-
-                <a class="navbar-item">
-                    Documentation
-                </a>
-
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        More
-                    </a>
-
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            About
-                        </a>
-                        <a class="navbar-item">
-                            Jobs
-                        </a>
-                        <a class="navbar-item">
-                            Contact
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Report an issue
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-primary">
-                            <strong>Sign up</strong>
-                        </a>
-                        <a class="button is-light">
-                            Log in
-                        </a>
-                    </div>
-                </div>
-            </div>  
-        </div>
-        </div>-->
     </nav>
-    <section style="height: 600px; width: 100%; background-color: black;" class=".txtmid">
-        <img src="Joker_V1.jpg" alt="Joker"></img>
-        <div class="txtmid"> 
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
-            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+    <section background-color="black!important">
+
+        <div class="tile is-ancestor">
+            <div class="tile">
+                <img src="Joker_V1.jpg" alt="Joker" border="0" class="coloumn"></img>
+            </div>
+            <div class="tile" style="margin-right:15px; margin-top: 15px;">
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et
+                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                    rebum. Stet
+                    clita kasd gubergren,
+                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                    sadipscing
+                    elitr, sed diam nonumy eirmod tempor
+                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                    duo
+                    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                    amet.
+                </p>
+            </div>
         </div>
-    </section>   
+    </section>
+
+
+
     <section style="height: 600px; width: 100%; background-color: white;">
     </section>
     <section style="height: 600px; width: 100%; background-color: #262626;">
-    </section>    
+    </section>
     <section style="height: 600px; width: 100%; background-color: white;">
-    </section>    
+    </section>
     <section style="height: 600px; width: 100%; background-color: black;">
     </section>
 
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', () => {
 
-        // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-      
-        // Check if there are any navbar burgers
-        if ($navbarBurgers.length > 0) {
-      
-          // Add a click event on each of them
-          $navbarBurgers.forEach( el => {
-            el.addEventListener('click', () => {
-      
-              // Get the target from the "data-target" attribute
-              const target = el.dataset.target;
-              const $target = document.getElementById(target);
-      
-              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-              el.classList.toggle('is-active');
-              $target.classList.toggle('is-active');
-      
-            });
-          });
-        }
-    });
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+        });
     </script>
 </body>
 
