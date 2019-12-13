@@ -1,8 +1,11 @@
-img{
-    float: left;
-}
-.txtmid{
-    line-height: 200px
+img {
+    border: none;
+    padding: 0.8em;
+    float:left;
+    }
+.zent{
+    width: 50%;
+
 }
 .swiper-container {
     width: 100%;
@@ -29,7 +32,11 @@ img{
 }
 
 .navbar-brand {
+    background-color: black!important;
     color: white;
+}
+div{
+    background-color: black!important;
 }
 
 .navbar-menu,
