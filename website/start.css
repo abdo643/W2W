@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+}
+#navback{
+    background-color: 	#99ffcc;
+}
+#navblock2{
+    background-color: #99ffcc;
+    float: left;
+    width: 100%;
+}
+section{
+    width:100%;
+}
+#navblock, .navbar-burger {
+    text-align: center;
+    background-color: #99ffcc;
+    color: black;
+    font-weight: 900;
+}
+html{
+    background-color: pink;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #999999;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+}
+
+.tile.box.is-parent{
+    background-color: #999999;
+}
+
+.navbar-burger{
+    top:1%!important;
+    right: 6%!important;
+    display: inline-block!important;
+    background-color: #999999;
+}
+.anpassen{
+    width: 100px;
+    height: 100px;
+}

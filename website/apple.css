@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+    background-color: #9e9ebe; 
+    padding: 0%;
+    margin-bottom: 0px!important;
+    
+}
+#navback{
+    background-color: #5f5f8d;
+}
+#navblock2{
+    background-color: black;
+    float: left;
+    width: 100%;
+}
+section{
+    width:100%;
+}
+#navblock, .navbar-burger {
+    text-align: center;
+    background-color: #5f5f8d;
+    color: black;
+    font-weight: 900;
+}
+body{
+    background-color: #7b7ba6;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #999999;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+}
+
+.tile.box.is-parent{
+    background-color: #999999;
+}
+
+.navbar-burger{
+  
+    top:1%!important;
+    right: 6%!important;
+    display: inline-block!important;
+    background-color: #999999;
+}
+.swiper-container{
+    background-color: #9e9ebe;
+    padding: 0%;
+}
